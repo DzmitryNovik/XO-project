@@ -21,7 +21,7 @@ class CurrentMoveControllerTest {
         } catch (InvalidPointException e) {
             e.printStackTrace();
         }
-        assertEquals(Figure.O, currentMoveController.currentMove(field));
+        assertEquals(Figure.X, currentMoveController.currentMove(field));
     }
 
     @Test
@@ -33,7 +33,7 @@ class CurrentMoveControllerTest {
         } catch (InvalidPointException e) {
             e.printStackTrace();
         }
-        assertEquals(Figure.X, currentMoveController.currentMove(field));
+        assertEquals(Figure.O, currentMoveController.currentMove(field));
     }
 
     @Test
