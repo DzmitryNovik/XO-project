@@ -64,7 +64,6 @@ public class ConsoleView {
             System.out.println("No String value!");
             return askCoordinate(coordinateName);
         }
-
     }
 
     private void printLine(final Field field,
