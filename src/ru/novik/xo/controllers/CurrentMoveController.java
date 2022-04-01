@@ -24,11 +24,9 @@ public class CurrentMoveController {
         }
 
         if (figureCounter % 2 != 0) {
-            return Figure.X;
+            return Figure.O;
         }
 
-        return Figure.O;
-
-
+        return Figure.X;
     }
 }
