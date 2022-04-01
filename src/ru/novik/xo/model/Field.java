@@ -1,6 +1,5 @@
 package ru.novik.xo.model;
 
-import ru.novik.xo.model.exceptions.AlreadyOccupiedException;
 import ru.novik.xo.model.exceptions.InvalidPointException;
 
 import java.awt.*;
@@ -41,6 +40,6 @@ public class Field {
     }
 
     private boolean checkCoordinate(final int coordinate, final int maxCoordinate) {
-        return coordinate >= MIN_COORDINATE && coordinate <= maxCoordinate;
+        return coordinate >= MIN_COORDINATE && coordinate < maxCoordinate;
     }
 }
